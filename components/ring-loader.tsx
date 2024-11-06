@@ -15,7 +15,7 @@ export default function CircularRingLoader({ size = 'md', className }: CircularR
     return (
         <div
             className={cn(
-                "inline-block rounded-full border-primary border-t-transparent animate-spin",
+                "inline-block rounded-full border-slate-50 border-t-transparent animate-spin",
                 sizeClasses[size],
                 className
             )}

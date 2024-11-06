@@ -20,7 +20,7 @@ const features = [
 
 export const Features = () => {
     return (
-        <div className="w-full flex flex-col gap-12 items-center justify-center mt-24">
+        <div className="w-full flex flex-col gap-12 items-center justify-center">
             <h1 className="title">Our Features</h1>
 
             <div className="w-full flex flex-col gap-8 justify-center items-center px-4 lg:flex-row lg:justify-between">

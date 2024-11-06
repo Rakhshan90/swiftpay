@@ -18,6 +18,7 @@ import { useToast } from "@/hooks/use-toast";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { authSchema, authSchemaType } from "@/actions/user/schema";
 import { signIn } from "next-auth/react"
+import CircularRingLoader from "./ring-loader"
 
 export default function SigninCard() {
     const router = useRouter()
@@ -70,7 +71,7 @@ export default function SigninCard() {
             <Card className="w-full max-w-md bg-slate-900 border-none">
                 <CardHeader>
                     <CardTitle className="text-3xl font-bold text-center text-secondary-200">
-                        Sign in to WorkStream
+                        Sign in to Swiftpay
                     </CardTitle>
                     <CardDescription className="text-center text-slate-50">
                         Enter your credentials to sign in / sign up
@@ -110,6 +111,7 @@ export default function SigninCard() {
                             />
                             <Button type="submit" className="w-full bg-primary" disabled={isLoading}>
                                 {isLoading ? "Signing in..." : "Sign in"}
+                                {isLoading && <CircularRingLoader className='w-4 h-4 ml-2' />}
                             </Button>
                         </form>
                     </Form>

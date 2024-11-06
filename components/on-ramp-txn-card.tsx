@@ -24,7 +24,7 @@ const OnRampTxnsCard = ({ transactions }: { transactions: { time: Date, amount: 
 
             <CardContent>
                 <div className='h-24 w-full overflow-y-auto'>
-                    <div className="flex flex-col gap-4 border-b pb-2 pr-2 border-slate-400">
+                    <div className="flex flex-col gap-4 border-b pb-2 pr-4 border-slate-400">
                         {transactions?.map((item, index) => (
                             <div key={index} className='w-full flex justify-between'>
                                 <div className="flex flex-col">

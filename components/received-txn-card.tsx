@@ -9,13 +9,13 @@ const RecievedTxnsCard = ({ recievedTxns }: { recievedTxns: { amount: number, ti
         <Card className='w-80 lg:w-96 bg-slate-900 border-none'>
             <CardHeader>
                 <CardTitle className='text-xl text-secondary-100 border-b pb-2 border-slate-400'>
-                    Credited Transactions
+                    Received Transactions
                 </CardTitle>
             </CardHeader>
 
             <CardContent>
                 <div className='h-24 w-full overflow-y-auto'>
-                    <div className="flex flex-col gap-4 border-b pb-2 border-slate-400">
+                    <div className="flex flex-col gap-4 border-b pb-2 pr-4 border-slate-400">
                         {recievedTxns?.map((item, index) => (
                             <div key={index} className='w-full flex justify-between'>
                                 <div className="flex flex-col">

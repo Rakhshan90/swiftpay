@@ -8,9 +8,9 @@ const Appbar = ({ signInHandler, signOutHandler, authenticated, navigateHandler,
 
 
     return (
-        <div className='py-4 px-2 md:p-4 max-w-screen mx-auto border-b border-slate-400'>
+        <div className='max-w-screen p-4 max-w-screen mx-auto border-b border-slate-400'>
             <div className="w-full flex justify-between items-center">
-                <Button className='flex gap-1 items-center text-xl font-bold text-secondary-200 ml-12 xl:ml-0' 
+                <Button className='flex gap-1 items-center text-xl font-bold text-secondary-200' 
                         onClick={landingPage}>
                     <span>
                         {wallet}
